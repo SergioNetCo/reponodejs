@@ -4,29 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento</title>
+    <style>
+    html {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(247, 238, 113);
+      }
+  
+      input[type="button"] {
+        margin: 5px;
+        padding: 10px 100px;
+        border-radius: 10px;
+        border-color: rgb(251, 206, 151) 3px solid;
+        background-color: beige;
+      }
+
+      h1 {
+        color: black;
+      }
+    </style>
     <script>
-        function sumar (num1,num2) {
-            return(num1+num2)
+        var num1 = parseFloat(prompt("Ingresa el primer número:"));
+        var num2 = parseFloat(prompt("Ingresa el segundo número:"));
+        function calcular(num1, num2, operacion) {
+            switch (operacion) {
+                case 'suma':
+                    return num1 + num2;
+                case 'resta':
+                    return num1 - num2;
+                case 'multiplicacion':
+                    return num1 * num2;
+                case 'division':
+                    return num1 / num2;
+                default:
+                    return "Operación no válida";
+            }
         }
-        function resta (num1,num2) {
-            return(num1-num2)
+
+        function sumar() {
+            var resultado = calcular(num1, num2, 'suma');
+            alert("Suma: " + resultado);
         }
-        function multiplicar (num1,num2) {
-            return(num1*num2)
+
+        function resta() {
+            var resultado = calcular(num1, num2, 'resta');
+            alert("Resta: " + resultado);
         }
-        function dividir (num1,num2) {
-            return(num1/num2)
+
+        function multiplicar() {
+            var resultado = calcular(num1, num2, 'multiplicacion');
+            alert("Multiplicación: " + resultado);
         }
-        sumar(alert(num1,num2))
-        resta(alert(num1,num2))
-        multiplicar(alert(num1,num2))
-        dividir(alert(num1,num2))
+
+        function dividir() {
+            var resultado = calcular(num1, num2, 'division');
+            alert("División: " + resultado);
+        }
     </script>
 </head>
 <body>
-    <input type="button" onclick="alert(sumar(5,5))" value="sumar">
-    <input type="button" onclick="alert(resta(5,5))" value="restar">
-    <input type="button" onclick="alert(multiplicar(5,5))" value="multiplicar">
-    <input type="button" onclick="alert(dividir(5,5))" value="divide">
+    <input type="button" onclick="sumar()" value="sumar">
+    <input type="button" onclick="resta()" value="restar">
+    <input type="button" onclick="multiplicar()" value="multiplicar">
+    <input type="button" onclick="dividir()" value="dividir">
 </body>
 </html>
