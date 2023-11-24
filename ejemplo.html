@@ -24,14 +24,12 @@
         border-color: rgb(251, 206, 151) 3px solid;
         background-color: beige;
       }
-
-      h1 {
-        color: black;
-      }
     </style>
     <script>
         var num1 = parseFloat(prompt("Ingresa el primer número:"));
         var num2 = parseFloat(prompt("Ingresa el segundo número:"));
+        /* La función funciona de manera que coge los 2 números y luego le asignas una operación, esa operación es el switch donde dentro tiene la opción a elegir
+        Y se le asigna un nombre a través case: 'nombre-opción'*/
         function calcular(num1, num2, operacion) {
             switch (operacion) {
                 case 'suma':
@@ -46,6 +44,9 @@
                     return "Operación no válida";
             }
         }
+
+        /* Para el funcionamiento de esto guarda la funcion calcular dentro de la variable resultado, luego coge las variables num1 y num2 y coge la "operación"
+        de esa manera se guarda los números y los opera con los case que se han elegido. */
 
         function sumar() {
             var resultado = calcular(num1, num2, 'suma');
@@ -69,6 +70,7 @@
     </script>
 </head>
 <body>
+    <!--  Aquí están los botones donde en el onclick="se coge la operación de la función calcular" y en value usa el sumar  -->
     <input type="button" onclick="sumar()" value="sumar">
     <input type="button" onclick="resta()" value="restar">
     <input type="button" onclick="multiplicar()" value="multiplicar">
