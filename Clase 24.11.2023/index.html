@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: black;
+        }
+    </style>
+    <script>
+        var num1 = parseInt(prompt("Ingresa el primer número:"));
+        var num2 = parseInt(prompt("Ingresa el segundo número:"));
+        function comparar (num1, num2){
+        if(num1 > num2){
+            return("El número 1 es mayor y es: " + num1)
+        } else {
+            return("El número 2 es mayor y es: " + num2)
+        }
+    }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="alert(comparar(num1, num2))" value="Comparar">
+</body>
+</html>
