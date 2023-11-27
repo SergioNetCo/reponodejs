@@ -7,3 +7,8 @@
 - Se ha añadido nuevos ejercicios realizados en casa.
 - Se ha añadido lo realizado en clase el día 24.11.
 - Se ha cambiado el fichero readme.md para ponerlo al día.
+## Contenido añadido en clase de el mismo día (27.11.2023)
+- Se crea un servidor a través de JS y se comenta para entenderlo mejor
+- Se añade código HMTL a el servidor para que lo entienda la web local.
+- Se añade un ejercicio juntando callbacks, servidor y un archivo local .txt
+- Se edita de nuevo el fichero readme.md con los nuevos datos.
