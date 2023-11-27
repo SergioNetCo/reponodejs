@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+    html {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body {
+        margin: 0;
+        background-color: rgb(222, 209, 29);
+      }
+  
+      input[type="button"] {
+        margin: 5px;
+        padding: 10px 100px;
+        border-radius: 10px;
+        border-color: rgb(251, 206, 151) 3px solid;
+        background-color: beige;
+      }
+
+      input[type="button"]:hover{
+        background-color: blanchedalmond;
+        border-color: azure 4px solid;
+      }
+
+      .text-header {
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .text-header > h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: aliceblue;
+        border: 3px solid black;
+      }
+
+      .text-header > h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      
+      .text-header, h1 {
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+      .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns */
+            grid-gap: 10px; /* Adjust the gap between buttons */
+            margin-top: 20px; /* Optional margin for spacing */
+        }
+    </style>
+    <script>
+        function Ejercicio1(){
+           var nombre = prompt("Dime tu nombre de usuario: ")
+           alert("Tu nombre es: "+nombre)
+        }
+        function Ejercicio2(){
+            var num1 = parseInt(prompt("Dime el número 1: "))
+            var num2 = parseInt(prompt("Dime el número 2: "))
+            let numFinal = num1+num2
+            alert("El número sumado es: "+numFinal)
+        }
+        function Ejercicio3(){
+            var edad = parseInt(prompt("Dime tu edad: "))
+            if(edad >= 18){
+                alert("Eres mayor de edad")
+            } else {alert("NO eres mayor de edad")}
+        }
+        function Ejercicio4(){
+            for(var num1=1;num1 <=10; num1++){
+                alert(num1)
+            }
+        }
+        function Ejercicio5(){
+            var num1 = parseInt(prompt("Diga un número y se calculará el factorial: "))
+            var numFactorial = 1;
+            /*Al realizarse le for numFactorial va guardando el ultimo valor que se le da
+              Y este sigue iterando Ej: 1x1=1, 1x2=2, 2x3=6, 6x4= 24*, 24x5=120*/
+            for (var i = 1; i <= num1; i++) {
+                numFactorial *= i;
+            }
+        alert("El factorial de "+num1+" es: "+numFactorial);
+        }
+        function Ejercicio6() {
+            var lista = []; // Dejandolo vacio, a la variable le dices que va a ser un array.
+            for (var i = 1; i <= 5; i++) {
+                var objeto = prompt("Dime un objeto para almacenar")
+                lista.push(objeto); // Usando push añadimos "objetos" a la lista directamente
+            }
+            // Con Join lo que haces es dar formato a la lista con una , y espacio entre ellas.
+            alert("Se han añadido los objetos y son: " + lista.join(", "));
+        }
+        function Ejercicio7() {
+            for(var i=1;i<=10;i++){
+                if (i % 2 == 0){
+                    alert("El número "+ i +" es par")
+                } else {
+                    alert("El número "+ i +" es impar")
+                }
+            }
+        }
+        function Ejercicio8() {
+            var passwd = prompt("Dame una contraseña: ")
+            if(passwd.length >= 6){
+                alert("La contraseña CUMPLE con lo especificado")
+            } else alert("La contraseña NO cumple con lo especificado")
+        }
+        function Ejercicio9() {
+            var num1 = Math.round(Math.random() * 10) + 1;
+            for(var i=1; i<=3; i++){
+                var numAdv = prompt("Dime un número:")
+                if(numAdv == num1){
+                    alert("¡Has adivinado el número: "+num1+"!")
+                } else alert("No has adivinado el número...")
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="text-header">
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Ejercicios para casa</h1>
+        <h2 style="font-family: 'Times New Roman', Times, serif;">Fecha: 26 . 11. 2023</h2>
+    </div>
+    <!--  Aquí están los botones donde en el onclick="se coge la operación de la función calcular" y en value usa el sumar  -->
+    <div class="button-grid">
+        <!-- Columna 1 -->
+        <input type="button" onclick="Ejercicio1()" value="Ejercicio1">
+        <input type="button" onclick="Ejercicio2()" value="Ejercicio2">
+        <input type="button" onclick="Ejercicio3()" value="Ejercicio3">
+        <!-- Columna 2 -->
+        <input type="button" onclick="Ejercicio4()" value="Ejercicio4">
+        <input type="button" onclick="Ejercicio5()" value="Ejercicio5">
+        <input type="button" onclick="Ejercicio6()" value="Ejercicio6">
+        <!-- Columna 3 -->
+        <input type="button" onclick="Ejercicio7()" value="Ejercicio7">
+        <input type="button" onclick="Ejercicio8()" value="Ejercicio8">
+        <input type="button" onclick="Ejercicio9()" value="Ejercicio9">
+    </div>
+</body>
+</html>
