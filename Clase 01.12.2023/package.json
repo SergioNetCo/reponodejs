@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "err": "^2.1.12",
+    "express": "^4.18.2",
     "formidable": "^3.5.1",
     "move": "^0.4.5",
     "mv": "^2.1.1",
