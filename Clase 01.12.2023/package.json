@@ -1,0 +1,18 @@
+{
+  "name": "clase-01.12.2023",
+  "version": "1.0.0",
+  "description": "Subir contenido a traves de una página web a un servidor",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SFS",
+  "license": "ISC",
+  "dependencies": {
+    "err": "^2.1.12",
+    "formidable": "^3.5.1",
+    "move": "^0.4.5",
+    "mv": "^2.1.1",
+    "throw": "^1.1.1"
+  }
+}
