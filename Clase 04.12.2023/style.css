@@ -1,22 +1,27 @@
-body {
-    margin: 20px;
+body, html {
+    background-color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
   }
 
 .text-initial {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
-    background-color: rgb(185, 222, 255);
+    background-color: rgb(22, 22, 43);
 }
 
 .text-initial > h1 {
     margin-left: 5.5%;
     font-size: 35px;
+    color: white;
 }
 
 .text-initial > h2 {
     margin-left: 5.5%;
+    color: white
 }
 
 .initial-text > h2 {
@@ -24,7 +29,6 @@ body {
     color: black;
     padding: 10px;
     font-size: 40px;
-    width: 97%;
     border: 1px solid #ccc;
 }
 
@@ -37,6 +41,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 60%;
+    margin-left: 30px;
+    margin-top: 0.5%;
   }
   
   .index-list {
@@ -45,7 +51,7 @@ body {
   }
   
   .index-list li {
-    margin: 20px 0; /* Ajuste del margen vertical */
+    margin: 20px 0;
     width: 100%;
   }
   
@@ -56,7 +62,7 @@ body {
   
   .index-img {
     display: flex;
-    padding-left: 5px;
+    padding-left: 2%;
   }
   
   .index-img img {
@@ -66,7 +72,39 @@ body {
     border-radius: 5px;
     padding: 30px;
     margin: 9px;
+    box-shadow: 5px 5px 10px #888888;
   }
+    .index-img img:hover {
+      box-shadow: 10px 10px 10px #b3b3b3;
+    }
   
-  
-  
+
+/* FOOTER */
+
+.footer {
+  margin-top: 50px;
+  background-color: rgb(22, 22, 43); /* Color de fondo azul marino */
+  color: #fff; /* Color del texto */
+  padding: 40px 0; /* Espaciado interno superior e inferior */
+  text-align: center; /* Alineación del texto */
+  width: 100%;
+  position: absolute; /* Para ubicar el footer al final de la página */
+  bottom: 0; /* Fijar el footer al final de la página */
+}
+
+.footer-content {
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+  display: flex; /* Usar display flex para alinear elementos */
+  align-items: center; /* Alinear elementos verticalmente */
+}
+
+.footer-image {
+  width: 100px; /* Ancho de la imagen */
+  margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+.footer-text {
+  flex-grow: 1; /* Hacer que el texto ocupe el espacio restante */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
