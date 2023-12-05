@@ -11,3 +11,13 @@
 - Hay que añadir los puntos de indice y empezar la estructuración de el texto.
 - Rediseñar colores y texto para una mejor imagen, sobre todo 'textos iniciales'.
 - Revisar y pensar como añadir cada práctica sin que sea un coñazo.
+
+# Día 2: 05.12.2023
+## Página inicial acabada y realizado lo siguiente:
+- Se ha terminado index.html y se han añadido imagenes para cada práctica
+- Se han creado carpetas especificas para cada práctica
+- Se está pensando como estructurar cada práctica con el mismo formato.
+## Pendientes para el siguiente día:
+- Realizar una maqueta html para cada una de las prácticas que tenga el mismo formato.
+- Revisar y realizar un documento por cada práctica con capturas y lo más importante.
+- Al menos, esta semana completar la mitad de prácticas.
