@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="text-initial">
+        <a href="/index.html"><h1 class="main-title">HOME</h1></a>
+        <h2 class="subtitle">Sergio Fernández Segura</h2>
+    </div>
+  </header>
+  <main>
+        <div class="h1-h2_inicial">
+            <h2 class="initial-text">ÍNDICE</h2>
+            <h2 class="second-text"><i>APACHE Y SERVIDORES WEB</i></h2>
+        </div>
+    <div class="ind-img">
+        <section class="index">
+            <ol class="index-list">
+            <li><a href="#museo">Gestor de contenido desde Xampp</a></li>
+            <li><a href="#hugo">Conf. virtual host en Apache</a></li>
+            <li><a href="#site">Seguridad de HTTP y HTTPS con Apache</a></li>
+            </ol>
+        </section>  
+        <section class="index-text">
+          <div class="index-first-text">
+            <h1>1. Introducción de un CMS en Xampp:</h1>
+            <p>
+              El objetivo de esta práctica era crear un wordpress con xampp, apache y mariaDB desde ficheros o la terminal. La práctica te va dando indicaciones de lo que hay que hacer
+              en todo momento. Una vez creado el wordpress y modificado varios ficheros poniendo tu nombre y demás llega la parte de la migración. Con el compañero de al lado (en mi caso Lucas)
+              hay que coger todos los documentos que me ha pasado de su wordpress y hay que importarlo para luego abrir un servidor localhost con ello. <br> <br>
+              Para certificar la realización de la practica dejo aquí los documentos que se pidieron: <a href="WRDPRESS_PACK.zip"><span class="index-url-text"><b>PDF & IMG</b></span></a>
+            </p>
+            <h1>2. Configuración virtual:</h1>
+            <p>
+              Esta fue la segunda práctica que realizamos sobre Apache. Fue bastante sencilla, se basaba en coger una página web, en este caso la que hice con Hugo Fwork. Modificando el fichero
+              host haciamos una petición dns local a nuestra página, en vez de por IP por un nombre, en este caso miproyecto.local.com. Tambien había que modificar el fichero httpd-vhosts.conf para
+              que apuntara a el nombre que le queriamos poner. <br><br>
+              Dejo por aquí una captura de como quedó: <br><br>
+              <img src="/03-apache/20231009_SergioFernandez_ProyectoLocalHosts.png" alt="">
+            </p>
+            <h1>3. ¿Es vulnerable HTTP?</h1>
+            <p>
+              Despues de editar y configurar bastantes ficheros ya habíamos aprendido una gran parte de Apache y sus ficheros. Lo que hicimos despues es montar apache en una máquina virtual
+              donde instalariamos un Ubuntu 20.04 a traves de la terminal y seguido PHP. Esta práctica se basaba en ver que seguridad tenía un servidor web sin el certificado de seguridad  HTTPS.
+              <br><br>
+              Instalamos apache, php y una serie de ficheros que hacian de login. Con wireshark comprobamos la poca seguridad que tenía http y se podia ver una vez introducias las credenciales el usuario
+              y la contraseña que se introducía. <br><br>
+              Al igual que las anteriores prácticas tambien voy a adjuntar un PDF que certifica que se ha realizado: <a href="http.pdf"><span class="index-url-text"><b>DESCARGAR PDF</b></span></a>
+            </p>
+          </div>
+        </section>
+    </div>
+  </main>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="/img/footer-img.png" alt="" class="footer-image">
+      <div class="footer-text">
+        <h3>Contacto del diseñador:</h3>
+        <p>Correo: sergio.fernandez.segura.03@gmail.com</p>
+        <p>Teléfono: 608 82 75 78</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

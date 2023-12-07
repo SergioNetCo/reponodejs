@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="text-initial">
+        <a href="/index.html"><h1 class="main-title">HOME</h1></a>
+        <h2 class="subtitle">Sergio Fernández Segura</h2>
+    </div>
+  </header>
+  <main>
+        <div class="h1-h2_inicial">
+            <h2 class="initial-text">ÍNDICE</h2>
+            <h2 class="second-text"><i>MODELO VISTA CONTROLADOR</i></h2>
+        </div>
+    <div class="ind-img">
+        <section class="index">
+            <ol class="index-list">
+            <li><a href="#mvc">Introducción MVC</a></li>
+            <li><a href="#canva">Canva para reforzar conocimiento</a></li>
+            <li><a href="#js-mvc">Creamos la arquitectura en JS</a></li>
+            </ol>
+        </section>  
+        <section class="index-text">
+          <div class="index-first-text">
+            <h1 id="mvc">1. Introducción</h1>
+            <p>
+              Poco despues de terminar con Hugo empezamos a ver el modelo vista controlador, un concepto muy importante que todo diseñador debe conocer. 
+              Es un patrón de diseño que separa la lógica de la aplicación en tres componentes: el modelo (datos y lógica), la vista (interfaz de usuario) y el controlador (gestiona la interacción entre modelo y vista).
+              <br><br>Aquí pongo una imagen donde se entiende mejor:<br><br>
+              <img class="img-mvc" src="/img/mvc-image.png" alt=""><br>
+              Tambien quería compartir el documento PDF de la teoria:
+              <a href="Introducción a la Arquitectura Web.pdf"><span class="index-url-text"><b>DESCARGAR PDF</b></span></a>
+            </p>
+            <h1 id="canva">2. Canva y link a la práctica</h1>
+            <p>
+              Para reforzar conocimientos y no olvidarse de este modelo, realizamos una infografía básica con un breve resumen sobre lo que se basa el Modelo Vista Controlador. <br>
+              Aquí dejo el link de el canva correspondiente: <a href="https://www.canva.com/design/DAFv1ViVhDo/ohm8D__yVPFqN72xJ1VLVw/view?utm_content=DAFv1ViVhDo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank"><span class="index-url-text"><b>CANVA</b></span></a>
+            </p>
+            <h1 id="js-mvc">3. Creación de MVC en JS</h1>
+            <p>
+              Esta práctica fue un poco más compleja, ya que recreamos a traves de JS lo que se basa el modelo. Sin tener mucha idea de lo que trataba y copiando codigo, logramos recrear el patron de manera bastante sencilla.
+              No me voy a poner técnico pero si voy a explicar un poco los pasos que fuimos haciendo. El programa se basaba en un controlador de tareas, donde ponias la tarea que querías registrar y se añadia. <br><br>
+              <b>Pasos realizados:</b><br>
+              &nbsp; 1. Estructura de el programa: debia tener el modelo <i>(taskmodel.js)</i>, la vista <i>(index.ejs y add.ejs)</i> y por ultimo el controlador. <i>(taskController.js)</i><br>
+              &nbsp; 2. Creamos a través de JS un servidor para llevar la aplicación a un "servidor web" dentro de localhost.<br>
+              &nbsp; 3. Taskmodel.js y index.ejs sirven para simular una base de datos y el index para hacer la página de inicio.<br>
+              &nbsp; 4. Add.ejs era para el botón, donde cada vez que le dabas añadia una nueva tarea.<br>
+              &nbsp; 5. Por último taskController.js que servia para registrar y añadir sin problema los taks creados. <br><br>
+
+              De nuevo vuelvo a dejar el PDF donde está el código y la explicación de la práctica: <a href="Ejemplo de arquitectura MVC.pdf"><span class="index-url-text"><b>PDF MVC</b></span></a><br><br>
+              Tambien dejo unas capturas por aquí de mi práctica para que veais como queda: <a href="Screenshoots_JSPractica.zip"><span class="index-url-text"><b>PACK IMG</b></span></a>
+            </p>
+        </section>
+    </div>
+  </main>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="/img/footer-img.png" alt="" class="footer-image">
+      <div class="footer-text">
+        <h3>Contacto del diseñador:</h3>
+        <p>Correo: sergio.fernandez.segura.03@gmail.com</p>
+        <p>Teléfono: 608 82 75 78</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
