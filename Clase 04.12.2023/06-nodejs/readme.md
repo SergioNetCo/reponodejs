@@ -1,0 +1,2 @@
+# ¿Por que hay un link y no texto?
+He decidido que en vez de documentar todo tontamente de nuevo, es mejor envíar directamente a donde tengo todas las prácticas realizadas de NodeJS y JS que ya está todo documentado. Con esto debería servir.

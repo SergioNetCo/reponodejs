@@ -21,3 +21,9 @@
 - Realizar una maqueta html para cada una de las prácticas que tenga el mismo formato.
 - Revisar y realizar un documento por cada práctica con capturas y lo más importante.
 - Al menos, esta semana completar la mitad de prácticas.
+
+# Día 3: 09.12.2023
+## Finalización de el proyecto y realizado lo siguiente:
+- Se han terminado los apartados Proxy, GIT y NodeJS.
+- Se retocan imagenes y se cambian varios apartados para que quede mejor.
+- Se sube a través de GitHub todos los documentos y se da por finalizado el portfolio.

@@ -8,47 +8,64 @@
 <body>
   <header>
     <div class="text-initial">
-        <h1 class="main-title">PORTFOLIO</h1>
+        <a href="/index.html"><h1 class="main-title">HOME</h1></a>
         <h2 class="subtitle">Sergio Fernández Segura</h2>
     </div>
   </header>
   <main>
         <div class="h1-h2_inicial">
             <h2 class="initial-text">ÍNDICE</h2>
-            <h2 class="second-text">PRÁCTICAS</h2>
+            <h2 class="second-text"><i>PROXY INVERSO Y APACHE</i></h2>
         </div>
     <div class="ind-img">
         <section class="index">
             <ol class="index-list">
-            <li><a href="#paginas-web">Páginas Web y Hugo</a></li>
-            <li><a href="#mvc">Modelo Vista Controlador</a></li>
-            <li><a href="#apache">Apache, Proxy y HTTPS</a></li>
-            <li><a href="#git-nodejs">Git, JS y NodeJS</a></li>
+            <li><a href="#practica">Gestor de contenido desde Xampp</a></li>
+            <li><a href="#exam1">Conf. virtual host en Apache</a></li>
+            <li><a href="#exam2">Seguridad de HTTP y HTTPS con Apache</a></li>
             </ol>
         </section>  
-        <section class="index-img">
-          <a href="01-hugo/index.html"><img src="img/hugo-img.png" alt="Hugo"></a>
-          <a href="02-mvc/index.html"><img src="img/mvc.png" alt="MVC"></a>
-          <a href="03-apache/index.html"><img src="img/apache.png" alt="Apache"></a>
-          <a href="04-proxy-inverso/index.html"><img src="img/proxy-inverso.png" alt="Proxy Inverso"></a>
-          <a href="05-https/index.html"><img src="img/http.png" alt="HTTPS"></a>
-          <a href="06-git/index.html"><img src="img/git.png" alt="Git"></a>
-          <a href="07-nodejs/index.html"><img src="img/nodejs.png" alt="Node.js"></a>
-      </section>
-      
+        <section class="index-text">
+          <div class="index-first-text">
+            <h1 id="practica">1. Primera práctica de Proxy inverso:</h1>
+            <p>
+              La práctica consistía en establecer un proxy inverso en Apache mediante XAMPP para dirigir las solicitudes del cliente al servidor backend, garantizando seguridad con HTTPS y la 
+              posibilidad de desconectar el servidor ante problemas. Además, realizamos la configuración de un balanceador de carga para distribuir el tráfico entre varios servidores,
+              todo gestionado por directivas específicas de Apache como ProxyPass y BalancerMember.
+            </p>
+            <h1 id="exam1">2. Examen. Parte 1:</h1>
+            <p>Unos días mas tarde hicimos un examen para ver que conocimiento teniamos sobre el proxy y si sin ayuda eramos capaces de montar uno en una maquina virtual Ubuntu.
+              <BR></BR>
+              La parte uno consistía en lo siguiente: <br>
+              &nbsp;&nbsp;1. Instalamos Apache y verificar que funciona. <br>
+              &nbsp;&nbsp;2. Configurabamos el virtual host para poner nuestro dominio y no por IP. <br>
+              &nbsp;&nbsp;3. Entregar la documentación de todo realizado.
+              <br><br>
+              Aquí dejo constancia de mi práctica de nuevo para descargar: <a href="practica1.pdf"><span class="index-url-text"><b>DESCARGAR PDF</b></span></a>
+            </p>
+            <h1 id="examen2">3. Examen. Parte 2: </h1>
+            <p>
+              Ahora venía la parte un poco más compleja. Había que realizar un proxy para un <i>Sonoff</i> de la red local que se podia acceder a través de una IP especifica.
+              Nuestra tarea fue crear una solución para que los usuarios pudieran interacturar con ese dispositivo a traves de una pagina web alojaba en el servidor Apache de Linux.
+              <br>Los usuarios accederán a esta página web a través de un servidor que actuará como <b>proxy inverso.</b>
+              <br><br>
+              Aquí dejo una captura de la página que ralicé en su día donde si le dabas encendia la luz: <br><br>
+              <img src="capSonoff.png" alt="">
+            </p>
+          </div>
+        </section>
     </div>
   </main>
   </div>
   <footer class="footer">
     <div class="footer-content">
-      <img src="/Clase 04.12.2023/img/footer-img.png" alt="" class="footer-image">
+      <img src="/img/footer-img.png" alt="" class="footer-image">
       <div class="footer-text">
-        <h3>Contacto</h3>
-        <p>Correo: ejemplo@correo.com</p>
-        <p>Teléfono: 123-456-7890</p>
+        <h3>Contacto del diseñador:</h3>
+        <p>Correo: sergio.fernandez.segura.03@gmail.com</p>
+        <p>Teléfono: 608 82 75 78</p>
       </div>
     </div>
   </footer>
-  
 </body>
 </html>

@@ -15,9 +15,19 @@ body, html {
   color: white;
 }
 
+.main-title {
+  color: white;
+  background-color: rgb(41, 41, 88);
+  width: 10%;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
 .h1-h2_inicial {
   display: flex;
   font-size: 25px;
+  justify-content: center;
 }
 
 .initial-text {
@@ -41,7 +51,8 @@ body, html {
 
 .ind-img {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+
 }
 
 .index {
@@ -72,33 +83,42 @@ body, html {
     text-decoration: dashed;
   }
 
-.index-img {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  padding: 20px;
-}
-
-.index-img a {
-  margin: 10px;
-  text-decoration: none;
-  display: flex;
+.index-text {
   border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px #888888;
-  transition: box-shadow 0.3s ease;
   padding: 15px;
-}
-
-.index-img a:hover {
-  box-shadow: 10px 10px 10px #b3b3b3;
-}
-
-.index-img img {
-  width: 150px;
-  height: 150px;
+  margin-left: 1.5%;
+  width: 73%;
   border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
 }
+  .index-first-text {
+    text-align: left;
+    margin-left: 5%;
+  }
+    .index-url-text {
+      background-color: aliceblue;
+      padding: 1px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+      .index-url-text, a {
+        text-decoration: none;
+        color: #050505;
+      }
+      .index-url-text:hover {
+        background-color: rgba(226, 226, 226, 0.555);
+        padding: 1px;
+        border: 1px solid #ccc;
+        color: rgb(70, 70, 170);
+        text-decoration: underline;
+      }
+  .index-first-text, p {
+    font-size: 20px;
+  }
+  .img, img {
+    width: 80%;
+  }
 
 /* FOOTER */
 
@@ -109,7 +129,7 @@ body, html {
   padding: 40px 0; 
   text-align: center; 
   width: 100%;
-  position: absolute; 
+  position: relative; 
   bottom: 0; 
 }
 
