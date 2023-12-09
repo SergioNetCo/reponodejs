@@ -15,3 +15,6 @@
 # 01.12.2023
 - Se crea una carpeta donde se realiza el laboratorio con NodeJS que sirve para subir archivos y moverlos
 - Se crea otra carpeta donde se realiza un servidor con el modulo express para ver como funciona un server.
+# 04.12.2023
+## Empezamos con el proyecto final de trimestre. 
+- Documentado todo en readme.md de la carpeta "Clase 04.12.2023".
